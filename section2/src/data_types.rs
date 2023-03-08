@@ -1,4 +1,4 @@
-fn main() {
+pub fn data_types() {
     let x: i8 = 10;
     println!("{}", x);
 
@@ -32,8 +32,7 @@ fn main() {
     let a: f32 = 10.0;
     let b: f32 = 3.0;
 
-    let remainder: f64 = a / b;
+    let remainder: f32 = a / b;
 
     println!("{:.2}", remainder);
-
 }

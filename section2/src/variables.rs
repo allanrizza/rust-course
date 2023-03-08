@@ -1,4 +1,4 @@
-fn main() {
+pub fn variables() {
     let mut x = 5;
 
     println!("The value of x is {}", x);
@@ -7,6 +7,6 @@ fn main() {
     println!("The value of x is {}", x);
 
     const SECONDS: i8 = 60;
-    println!("The value of SECONDS is {}", SECONDS);
+    println!("The value of the const SECONDS is {}", SECONDS);
 
 }
