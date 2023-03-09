@@ -1,4 +1,4 @@
-mod vectors;
+mod slices;
 fn main() {
-    vectors::vectors();
+    slices::slices();
 }
