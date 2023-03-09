@@ -1,4 +1,4 @@
-mod slices;
+mod strings;
 fn main() {
-    slices::slices();
+    strings::strings();
 }
