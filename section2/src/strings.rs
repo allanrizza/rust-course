@@ -18,4 +18,11 @@ pub fn strings() {
 
     // compare string == != (does not equal)
     println!("{}", "ONE".to_lowercase() == "one");
+
+
+    // EXPLORING STRING FUNCTIONS:
+    let mut hello = String::from("Hello, ");
+    hello.push('w');
+    hello.push_str("orld!");
+    println!("{}", &hello[..5]);
 }

@@ -1,3 +1,4 @@
+#[path = "../section2/src/section2.rs"] mod section2;
 fn main() {
-    println!("Hello, world!");
+    section2::section_2_fn();
 }
