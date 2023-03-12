@@ -1,4 +1,4 @@
-#[path = "strings.rs"] mod strings;
+#[path = "string-literals.rs"] mod strings_literals;
 pub fn section_2_fn() {
-    strings::strings();
+    strings_literals::string_literals();
 }
