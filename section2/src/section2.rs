@@ -1,4 +1,6 @@
-#[path = "string-literals.rs"] mod strings_literals;
+#[path = "functions.rs"] mod functions;
 pub fn section_2_fn() {
-    strings_literals::string_literals();
+    functions::print_phrase("Print my argument");
+    println!("{}", functions::gcd(20, 5));
+    println!("{}", functions::multiple_return_values(true));
 }
