@@ -1,5 +1,5 @@
 #[path = "../section2/src/section2.rs"] mod section2;
-mod pause;
+#[path = "/pause.rs"] mod pause;
 fn main() {
     section2::section_2_fn();
 
