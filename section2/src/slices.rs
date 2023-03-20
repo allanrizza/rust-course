@@ -1,21 +1,15 @@
-pub fn slices() {
+pub fn print_slices() {
     let v: Vec<i32> = (0..5).collect();
     println!("{:?}", v);
 
     let sv: &[i32] = &v[2..4];
-
     println!("{:?}", sv);
 
     let string = String::from("hello world");
-
-    println!("{}", &string[0..first_word(&string)]);
+    let index = find_first_word_index(&string);
+    println!("{}", &string[..index]);
 }
 
-fn first_word(s: &String) -> usize {
-    for (i, &item) in s.as_bytes().iter().enumerate() {
-        if item == b' ' {
-            return i;
-        }
-    }
-    s.len()
+fn find_first_word_index(s: &str) -> usize {
+    s.find(' ').unwrap_or_else(|| s.len())
 }
